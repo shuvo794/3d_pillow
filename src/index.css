@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Purple gradient theme for custom pillow shop */
+    --background: 270 60% 85%;
+    --foreground: 270 20% 20%;
+
+    --card: 270 50% 90%;
+    --card-foreground: 270 20% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 270 20% 20%;
+
+    --primary: 270 50% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 270 40% 70%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 270 30% 75%;
+    --muted-foreground: 270 20% 40%;
+
+    --accent: 340 85% 65%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 85% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 270 30% 80%;
+    --input: 270 30% 90%;
+    --ring: 270 50% 55%;
+
+    --radius: 0.75rem;
+
+    /* Custom colors for pillow shop */
+    --purple-light: 270 60% 85%;
+    --purple-medium: 270 50% 70%;
+    --purple-dark: 270 50% 55%;
+    --pink-sale: 330 85% 70%;
+    --coral-cta: 340 85% 65%;
+    --red-alert: 0 85% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
